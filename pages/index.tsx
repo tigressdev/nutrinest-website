@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 
 export default function Home() {
@@ -7,8 +8,8 @@ export default function Home() {
         <Image
           src="/A_clean_and_futuristic_digital_illustration_repres.png"
           alt="NutriNest Background"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{ objectFit: "cover" }}
           className="opacity-80"
           priority
         />
