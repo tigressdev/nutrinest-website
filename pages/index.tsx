@@ -1,31 +1,23 @@
+import React from 'react';
 
-import Image from "next/image";
-
-export default function Home() {
+const Home = () => {
   return (
-    <main className="min-h-screen bg-green-900 text-white flex items-center justify-center flex-col px-4">
-      <div className="relative w-full h-screen">
-        <Image
-          src="/A_clean_and_futuristic_digital_illustration_repres.png"
-          alt="NutriNest Background"
-          fill
-          style={{ objectFit: "cover" }}
-          className="opacity-80"
-          priority
-        />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10">
-          <Image
-            src="/nutrinest_logo00.jpg"
-            alt="NutriNest Logo"
-            width={160}
-            height={160}
-            className="rounded-full opacity-75 mx-auto mb-6"
-          />
-          <h1 className="text-3xl md:text-5xl font-bold mt-8">
-            A inovação Nutri está chegando
-          </h1>
-        </div>
+    <div className="relative">
+      <img
+        src="/A_clean_and_futuristic_digital_illustration_repres.png"
+        alt="NutriNest Illustration"
+        className="w-full h-screen object-cover"
+      />
+      <img
+        src="/nutrinest_logo00.jpg"
+        alt="NutriNest Logo"
+        className="absolute top-1/3 left-1/2 transform -translate-x-1/2 w-32 h-32"
+      />
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-white text-4xl font-bold">
+        A inovação Nutri está chegando
       </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Home;
